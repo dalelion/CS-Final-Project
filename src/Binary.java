@@ -18,10 +18,10 @@ public enum Binary {
 	/**14*/ B1110('E'),
 	/**15*/ B1111('F');
 	
-	char HexidecimalValue;
+	char HexadecimalValue;
 	
 	Binary(char H) {
-		HexidecimalValue = H;
+		HexadecimalValue = H;
 	}
 	
 	public String BinaryValue() {

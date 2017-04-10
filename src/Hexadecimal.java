@@ -1,5 +1,5 @@
 
-public enum Hexidecimal {
+public enum Hexadecimal {
 
 	/** 0 */
 	x0("0000"),
@@ -36,94 +36,94 @@ public enum Hexidecimal {
 
 	String BinaryNumber;
 
-	Hexidecimal(String B) {
+	Hexadecimal(String B) {
 		BinaryNumber = B;
 	}
 
 	public static String BinaryValue(char H) {
 		String HexString = "x" + H;
-		return Hexidecimal.valueOf(HexString).BinaryNumber;
+		return Hexadecimal.valueOf(HexString).BinaryNumber;
 	}
 
 	public char HexValue() {
 		return this.name().charAt(1);
 	}
 
-	private static Hexidecimal CharToHex(char C) {
+	private static Hexadecimal CharToHex(char C) {
 		switch (C) {
 		case '0':
-			return Hexidecimal.x0;
+			return Hexadecimal.x0;
 		case '1':
-			return Hexidecimal.x1;
+			return Hexadecimal.x1;
 		case '2':
-			return Hexidecimal.x2;
+			return Hexadecimal.x2;
 		case '3':
-			return Hexidecimal.x3;
+			return Hexadecimal.x3;
 		case '4':
-			return Hexidecimal.x4;
+			return Hexadecimal.x4;
 		case '5':
-			return Hexidecimal.x5;
+			return Hexadecimal.x5;
 		case '6':
-			return Hexidecimal.x6;
+			return Hexadecimal.x6;
 		case '7':
-			return Hexidecimal.x7;
+			return Hexadecimal.x7;
 		case '8':
-			return Hexidecimal.x8;
+			return Hexadecimal.x8;
 		case '9':
-			return Hexidecimal.x9;
+			return Hexadecimal.x9;
 		case 'A':
-			return Hexidecimal.xA;
+			return Hexadecimal.xA;
 		case 'B':
-			return Hexidecimal.xB;
+			return Hexadecimal.xB;
 		case 'C':
-			return Hexidecimal.xC;
+			return Hexadecimal.xC;
 		case 'D':
-			return Hexidecimal.xD;
+			return Hexadecimal.xD;
 		case 'E':
-			return Hexidecimal.xE;
+			return Hexadecimal.xE;
 		case 'F':
-			return Hexidecimal.xF;
+			return Hexadecimal.xF;
 		default:
-			return Hexidecimal.x0;
+			return Hexadecimal.x0;
 		}
 	}
 	
-	private static Hexidecimal intToHex(int i) {
+	private static Hexadecimal intToHex(int i) {
 		switch (i) {
 		case 0:
-			return Hexidecimal.x0;
+			return Hexadecimal.x0;
 		case 1:
-			return Hexidecimal.x1;
+			return Hexadecimal.x1;
 		case 2:
-			return Hexidecimal.x2;
+			return Hexadecimal.x2;
 		case 3:
-			return Hexidecimal.x3;
+			return Hexadecimal.x3;
 		case 4:
-			return Hexidecimal.x4;
+			return Hexadecimal.x4;
 		case 5:
-			return Hexidecimal.x5;
+			return Hexadecimal.x5;
 		case 6:
-			return Hexidecimal.x6;
+			return Hexadecimal.x6;
 		case 7:
-			return Hexidecimal.x7;
+			return Hexadecimal.x7;
 		case 8:
-			return Hexidecimal.x8;
+			return Hexadecimal.x8;
 		case 9:
-			return Hexidecimal.x9;
+			return Hexadecimal.x9;
 		case 10:
-			return Hexidecimal.xA;
+			return Hexadecimal.xA;
 		case 11:
-			return Hexidecimal.xB;
+			return Hexadecimal.xB;
 		case 12:
-			return Hexidecimal.xC;
+			return Hexadecimal.xC;
 		case 13:
-			return Hexidecimal.xD;
+			return Hexadecimal.xD;
 		case 14:
-			return Hexidecimal.xE;
+			return Hexadecimal.xE;
 		case 15:
-			return Hexidecimal.xF;
+			return Hexadecimal.xF;
 		default:
-			return Hexidecimal.x0;
+			return Hexadecimal.x0;
 		}
 	}
 
