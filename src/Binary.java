@@ -1,4 +1,4 @@
-
+//Test
 public enum Binary {
 	
 	/**0*/  B0000('0'),

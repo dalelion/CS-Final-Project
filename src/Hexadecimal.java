@@ -1,4 +1,4 @@
-
+//test
 public enum Hexadecimal {
 
 	/** 0 */
