@@ -150,5 +150,4 @@ public enum Hexadecimal {
 		}
 		return Hex;
 	}
-
 }

@@ -135,5 +135,4 @@ public static String FromDecimal(String D) {
 		}
 		return Bin;
 	}
-	
 }
