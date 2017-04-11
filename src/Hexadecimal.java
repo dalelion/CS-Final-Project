@@ -1,4 +1,8 @@
-//test
+/**
+ * Hex enum to convert from Hex to Binary
+ * @author dalelion
+ *
+ */
 public enum Hexadecimal {
 
 	/** 0 */
@@ -35,20 +39,24 @@ public enum Hexadecimal {
 	xF("1111");
 
 	String BinaryNumber;
-
+	
+	//Used to store the Binary value at each Hex location
 	Hexadecimal(String B) {
 		BinaryNumber = B;
 	}
-
+	
+	//Used to retrieve the Binary value of a single character
 	public static String BinaryValue(char H) {
 		String HexString = "x" + H;
 		return Hexadecimal.valueOf(HexString).BinaryNumber;
 	}
 
+	//Retrieves the Hex character value of a Hex type
 	public char HexValue() {
 		return this.name().charAt(1);
 	}
 
+	//Converts character into hex type
 	private static Hexadecimal CharToHex(char C) {
 		switch (C) {
 		case '0':
@@ -88,6 +96,7 @@ public enum Hexadecimal {
 		}
 	}
 	
+	//Converts integer value to Hex type. Must be less than 16.
 	private static Hexadecimal intToHex(int i) {
 		switch (i) {
 		case 0:
@@ -126,11 +135,27 @@ public enum Hexadecimal {
 			return Hexadecimal.x0;
 		}
 	}
-
+	
+	//Returns the decimal value of a hex type
 	public int DecimalValue() {
 		return this.ordinal();
 	}
+	
+	//Converts Hex string to Binary String
+	public static String ToBinary(String H) {
+		
+		String Bin = "";
+		
+		for (int i = 0; i < H.length(); ++i) {
+			
+			Bin += CharToHex(H.charAt(i)).BinaryNumber;
+			
+		}
+		
+		return Bin;
+	}
 
+	//Converts hex string to Decimal integer
 	public static int ToDecimal(String H) {
 		int Total = 0;
 		for (int i = 0; i < H.length(); ++i) {
@@ -139,6 +164,7 @@ public enum Hexadecimal {
 		return Total;
 	}
 	
+	//Converts Decimal String to Hex String
 	public static String FromDecimal(String D) {
 		
 		String Hex = "";
